@@ -6,7 +6,7 @@ function CustomerTransfer() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('https://localhost:3333/customer-transfer', {}, {
+      const response = await axios.post('http://localhost:3333/api/customer-transfer', {}, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
